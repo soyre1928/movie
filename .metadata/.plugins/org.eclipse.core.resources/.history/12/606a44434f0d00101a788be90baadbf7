@@ -1,0 +1,20 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/movie
+    username: cjh
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+openapi:
+  api-key: 2fd119dad2ec861ceff24d368453f976
+  daily: http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json
