@@ -1,0 +1,5 @@
+package kh.gangnam.movie.Repository;
+
+public interface MovieCdRepository {
+
+}

@@ -1,0 +1,20 @@
+package kh.gangnam.movie.Model.OpenApiDAO;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import kh.gangnam.movie.Model.OpenApiDTO.MovieCdDTO;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+public class MovieCdDAO {
+	
+	private String movieCd;
+	
+	public static  MovieCdDAO fromDTO(MovieCdDTO dto) {
+		
+	}
+}

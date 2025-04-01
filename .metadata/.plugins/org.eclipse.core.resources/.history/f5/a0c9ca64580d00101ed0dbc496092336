@@ -1,0 +1,41 @@
+package kh.gangnam.movie.Model.OpenApiDAO;
+
+import jakarta.persistence.*;
+import kh.gangnam.movie.Model.OpenApiDTO.BoxOfficeResult;
+import kh.gangnam.movie.Model.OpenApiDTO.DailyBoxOffice;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+
+@Entity
+@Getter
+@Setter
+public class BoxOfficeResultDAO {
+
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long dailyId;
+
+    private String boxofficeType;
+    
+    @Column(name = "show_date")
+    private String showDate;
+
+    @OneToMany(mappedBy = "boxOfficeResult")
+    private List<DailyBoxOfficeDAO> dailyBoxOfficeList;
+
+    public static BoxOfficeResultDAO fromDTO(BoxOfficeResult dto) {
+        BoxOfficeResultDAO dao = new BoxOfficeResultDAO();
+        dao.boxofficeType = dto.getBoxofficeType();
+        
+        String showDate = dto.getShowDate();
+        if (showDate != null && showDate.contains("~")) {
+            dao.showDate = showDate.split("~")[0]; // ~ 앞의 첫 부분만 사용
+            System.out.println(showDate);
+        } else {
+            dao.showDate = showDate; // ~가 없으면 그대로 사용
+        }
+        return dao;
+    }
+}

@@ -2,4 +2,12 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="kh.gangnam.movie.Repository.MovieCdRepository"/>
+    <fullyQualifiedTypeName name="kh.gangnam.movie.Model.OpenApiDAO.MovieCdDAO"/>
+    <fullyQualifiedTypeName name="kh.gangnam.movie.Model.OpenApiDTO.MovieCdDTO"/>
+    <fullyQualifiedTypeName name="kh.gangnam.movie.Model.OpenApiDTO.MovieCdResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 </qualifiedTypeNameHistroy>

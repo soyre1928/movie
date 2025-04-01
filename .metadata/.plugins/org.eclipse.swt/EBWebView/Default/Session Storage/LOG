@@ -1,2 +1,3 @@
-2025/03/30-18:02:02.526 30fc Creating DB D:\movie\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage since it was missing.
-2025/03/30-18:02:02.531 30fc Reusing MANIFEST D:\movie\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/04/02-00:04:51.654 45dc Reusing MANIFEST D:\movie\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/04/02-00:04:51.655 45dc Recovering log #3
+2025/04/02-00:04:51.656 45dc Reusing old log D:\movie\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
